@@ -1,25 +1,19 @@
-# Kvasir V2 Dataset - Esophageal Cancer Classification
+# Esophageal Cancer Classifier using ResNet50 Model
 
-This repository contains a Jupyter notebook and supporting files for training a ResNet50 deep learning model to classify endoscopic images from the Kvasir V2 dataset into stages of esophageal cancer (Normal, Early Cancer, Advanced Cancer). The notebook leverages PyTorch and CUDA for GPU acceleration and includes data preprocessing, model training, and evaluation.
+This repository contains code and resources for classifying esophageal cancer stages (Normal, Early Cancer, Advanced Cancer) using the Kvasir V2 dataset and a ResNet50 model implemented in PyTorch with CUDA support.
 
-## Overview
-- **Dataset**: Kvasir V2 (a publicly available endoscopic dataset with ~8,000 images across various gastrointestinal conditions).
-- **Task**: Binary and multi-class classification of esophageal cancer stages.
-- **Model**: ResNet50 (pretrained on ImageNet) fine-tuned for esophageal cancer detection.
-- **Environment**: Python 3.11 with PyTorch, CUDA 12.8, and additional libraries.
-- **Hardware**: NVIDIA RTX A4000 Laptop GPU (or compatible GPU).
+## Dataset
+The Kvasir V2 reorganized dataset is included in this repository using Git Large File Storage (LFS) due to its size (~4 GB). Alternatively, if LFS is not accessible, an external download link is provided.
 
-## Repository Contents
-- `train_esophageal_classifier.ipynb`: Jupyter notebook with the complete training pipeline.
-- `kvasir_v2_reorganized/`: Directory containing the reorganized Kvasir V2 dataset (train and validation splits).
-- `esophageal_classifier_kvasir_v2_cnn.pth`: Pretrained model weights (optional, if included).
-- `README.md`: This file with usage instructions.
-- `requirements.txt`: List of Python dependencies (to be created).
+### Where to Get the Dataset
+- **Source**: The original Kvasir V2 dataset is provided by the Simula Research Laboratory and the University of Oslo.
+- **Official Link**: [Kvasir V2 Dataset](https://datasets.simula.no/kvasir/)
+  - You may need to request access or follow the dataset’s terms of use. The dataset contains ~8,000 endoscopic images across various gastrointestinal conditions, which we have reorganized for esophageal cancer classification.
+- **This Repository**: The reorganized dataset (`kvasir_v2_reorganized`) with train and validation splits is available via Git LFS in this repo. Download instructions are below.
 
-## Instructions to Use the Jupyter Notebook
-
-### 1. **Clone the Repository**
-Clone this repository to your local machine:
-```bash
-git clone https://github.com/yourusername/kvasir-esophageal-cancer-dataset.git
-cd kvasir-esophageal-cancer-dataset
+### How to Use the Dataset
+1. **Clone the Repository**:
+   - Clone this repository to your local machine:
+     ```bash
+     git clone https://github.com/sagargour24/Esophageal-Cancer-Classifier-using-Resnet50-Model.git
+     cd Esophageal-Cancer-Classifier-using-Resnet50-Model
